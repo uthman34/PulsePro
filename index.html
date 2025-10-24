@@ -54,7 +54,7 @@
     <p class="text-center fw-bold fs-2">Core Features</p>
     <div class="row container-fluid m-0 ">
       <div class="card-container d-lg-flex justify-content-center">
-        <div class="col-sm-12 col-lg-3 p-3">
+        <div class="col-sm-12 col-lg-3 p-3 d-flex" data-aos="fade-right"  data-aos-duration="2000">
           <div class="card">
             <img src="./Gemini_Generated_Image_2619wt2619wt2619.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -64,7 +64,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-lg-3 p-3">
+        <div class="col-sm-12 col-lg-3 p-3" data-aos="fade-up"  data-aos-duration="2000">
           <div class="card">
             <img src="./Gemini_Generated_Image_2619wt2619wt2619 (1).png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -74,7 +74,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-lg-3 p-3">
+        <div class="col-sm-12 col-lg-3 p-3" data-aos="fade-left"  data-aos-duration="2000">
           <div class="card">
             <img src="./Gemini_Generated_Image_2619wt2619wt2619.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -85,52 +85,54 @@
           </div>
         </div>
       </div>
-      <!-- form space -->
-      <div class="container d-flex justify-content-center mt-5">
-        <div class=" w-75 shadow p-5" data-aos="zoom-out-up" data-aos-duration="2000" data-aos-delay="1000">
-          <p class="text-center fw-bold fs-2">Check Your Plan Eligibility</p>
-          <div class="input-group ">
-            <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
-              <option selected>Select Your Team Size</option>
-              <option value="1">One person</option>
-              <option value="2">Two-Five people</option>
-              <option value="3">More Than Five people</option>
-            </select>
-            <button class="btn btn-outline-secondary" type="button" onclick="cheekerButton ()">Button</button>
-          </div>
-          <p class="text-center  fw-bold" id="showResult">...</p>
-        </div>
+    </div>
+  </div>
+  <!-- form space -->
+  <div class="container d-flex justify-content-center mt-5">
+    <div class=" w-75 shadow p-5" data-aos="zoom-out-up" data-aos-duration="2000" data-aos-delay="1000">
+      <p class="text-center fw-bold fs-2">Check Your Plan Eligibility</p>
+      <div class="input-group ">
+        <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+          <option selected>Select Your Team Size</option>
+          <option value="1">One person</option>
+          <option value="2">Two-Five people</option>
+          <option value="3">More Than Five people</option>
+        </select>
+        <button class="btn btn-outline-secondary" type="button" onclick="cheekerButton ()">Button</button>
       </div>
+      <p class="text-center  fw-bold" id="showResult">...</p>
     </div>
-    <!-- footer -->
-    <div class="bg-dark p-3 text-light mt-5 ">
-      <p class="text-center text-light">© 2025 Pulse Pro. All rights reserved.Design By Dev Flux </p>
-    </div>
-    <!-- <h1>JS Bootstrap cdn</h1> -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
-      integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
-      crossorigin="anonymous"></script>
-    <!-- AOS cdn -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script>
-      const cheekerButton = () => {
-        if (inputGroupSelect04.value === '1') {
-          showResult.innerHTML = "Your team size  qualifies for our light plan subscription which is  Ideal for solopreneurs. And it is $20 per Month"
-        }
-        else if (inputGroupSelect04.value === '2') {
-          showResult.innerHTML = "Your team size  qualifies for our   Pro subscription Plan which is  Ideal  for small Team. And it is $50 per Month"
-        }
-        else if (inputGroupSelect04.value === '2') {
-          showResult.innerHTML = "Your team size  qualifies for our   plus subscription Plan which is  Ideal for big Team. And it is $100 per Month"
-        }
+  </div>
+
+  <!-- footer -->
+  <div class="bg-dark p-3 text-light mt-5 ">
+    <p class="text-center text-light">© 2025 Pulse Pro. All rights reserved.Design By Dev Flux </p>
+  </div>
+  <!-- <h1>JS Bootstrap cdn</h1> -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
+  <!-- AOS cdn -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    const cheekerButton = () => {
+      if (inputGroupSelect04.value === '1') {
+        showResult.innerHTML = "Your team size  qualifies for our light plan subscription which is  Ideal for solopreneurs. And it is $20 per Month"
       }
-    </script>
+      else if (inputGroupSelect04.value === '2') {
+        showResult.innerHTML = "Your team size  qualifies for our   Pro subscription Plan which is  Ideal  for small Team. And it is $50 per Month"
+      }
+      else if (inputGroupSelect04.value === '2') {
+        showResult.innerHTML = "Your team size  qualifies for our   plus subscription Plan which is  Ideal for big Team. And it is $100 per Month"
+      }
+    }
+  </script>
 </body>
 
 </html>
